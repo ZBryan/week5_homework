@@ -2,9 +2,10 @@
 
 #$LOAD_PATH.unshift File.expand_path("../lib", __FILE__)
 
-#require test_gem
+require test_gem
 
 puts "test_gem script executing"
 puts ARGV[0]
 
-puts TestGem::File::first ( Argv[0])
+puts TestGem::MyFile.first ( ARGV[0] )
+
